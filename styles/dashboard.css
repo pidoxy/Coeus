@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif ;
+    background-color:#ABD8ED !important;
+}
+
+nav{
+    background-color:#ffffff;
+}
+
+/* Fonts */
+.font-balsamiq{
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.navbar-brand{
+text-decoration: underline !important;
+color:black !important;
+font-size:1.5rem !important;
+}
+
+.dash-text{
+    color:black !important;
+    font-size:1.5rem;  
+}
+
+.dash-card{
+max-height:4rem !important;
+}
+
+.logo img {
+    text-align: center;
+    justify-content: center;
+}
+
+.logo p {
+    font-size: 2rem;
+}
+
+.t-white {
+    color: #ffffff;
+}
+
+.t-orange{
+    color: #FDA202 !important;
+}
+
+.logo-orange{
+width:2%;
+}
+
+.t-login{
+    color:black !important;
+}
+
+.btn-blue{
+    background-color:#58B1DA !important;
+    color:#ffffff !important;
+}
+
+.btn-orange{
+    background-color:#FFB766 !important;
+    color:#ffffff !important;
+}
+
+.btn-font{
+    font-size:2rem !important;
+}
+
+.dash-icon{
+width:15%;
+}
+
+.row div{
+    min-height:6rem;
+}
+
+.play-icon{
+    width:20%;
+}
