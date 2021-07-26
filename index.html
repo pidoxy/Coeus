@@ -14,7 +14,7 @@
 <body>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <img class="me-3 logo-orange img-fluid"  src="./images/logo-orange.svg" alt="" srcset="">
+      <img class="me-3 logo-orange img-fluid" src="./images/logo-orange.svg" alt="" srcset="">
       <a class="navbar-brand" href="#">COEUS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,15 +23,15 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link dash-text" aria-current="page" href="#">DASHBOARD</a>
+            <a class="nav-link dash-text" aria-current="page" href="/index.html">DASHBOARD</a>
           </li>
         </ul>
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link t-orange" aria-current="page" href="#">Sign Up</a>
+            <a class="nav-link t-orange" aria-current="page" href="/signup.html">Sign Up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link t-login" aria-current="page" href="#">Login</a>
+            <a class="nav-link t-login" aria-current="page" href="/login.html">Login</a>
           </li>
         </ul>
       </div>
@@ -43,7 +43,7 @@
         <div class="logo d-flex pt-5">
           <img class="m-auto pt-3" src="./images/logo-white.svg" alt="logo">
         </div>
-        <div class="logo d-flex pt-5">
+        <div class="logo d-flex pt-3">
           <img class="m-auto pt-3" src="./images/brand-name.svg" alt="logo">
         </div>
         <div class="logo d-flex pt-5">
@@ -57,36 +57,30 @@
     </div>
     <div class="main-2 p-5 px-5">
       <div class="row g-2">
-        <div class="col-4 dash-card">
+        <div onclick="goToGame(1);" class="col-md-4 col-12 dash-card">
           <div class="p-3 text-center rounded bg-light">
-            <img class="img-fluid dash-icon" src="./images/dash-icon1.svg" alt="short term memory" >
+            <img class="img-fluid dash-icon" src="./images/dash-icon1.svg" alt="short term memory">
             <h5>Short Term Memory</h5>
             <p>Test your short term memory </p>
           </div>
         </div>
-        <div class="col-4 dash-card">
+        <div onclick="goToGame(2);" class="col-md-4 col-12 dash-card">
           <div class="p-3 text-center rounded bg-light">
-            <img class="img-fluid dash-icon" src="./images/dash-icon2.svg" alt="Long term memory" >
+            <img class="img-fluid dash-icon" src="./images/dash-icon2.svg" alt="Long term memory">
             <h5>Long Term Memory</h5>
             <p>Test your long-term memory </p>
           </div>
         </div>
-        <div class="col-4 dash-card">
+        <div onclick="goToGame(3);" class="col-md-4 col-12 dash-card">
           <div class="p-3 text-center rounded bg-light">
-            <img class="img-fluid dash-icon" src="./images/dash-icon3.svg" alt="Working memory" >
+            <img class="img-fluid dash-icon" src="./images/dash-icon3.svg" alt="Working memory">
             <h5>Working Memory</h5>
             <p>Test your working memory </p>
           </div>
         </div>
       </div>
-    </main>
-  <footer>
-
-  </footer>
-
-
-
-
+  </main>
+  
 
 
   <script src="script.js"></script>
