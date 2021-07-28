@@ -25,3 +25,8 @@ const shortTerm = () => {
     window.location.href = '/shortterm_game.html';
 
 }
+
+const assess = () => {
+    window.location.href = '/assessment_game.html';
+
+}

@@ -1,12 +1,25 @@
+let timeleft = 10;
+let val;
 
-var timeleft = 10;
-const edit = document.getElementById('editable');
 const instruction = document.getElementById('instruction');
+
+const yes = () => {
+    val = "yes"
+}
+
+const no = () => {
+    val = "no"
+}
+
 var downloadTimer = setInterval(function () {
-    if (timeleft <= 0) {
+    if (timeleft <= 0 && val == "no") {
         setTimeout((clearInterval(downloadTimer)), 4000);
         clearInterval(downloadTimer);
-        setTimeout((location.assign('./game3.html')), 4000)
+        setTimeout((location.assign('./congrats_login.html')), 4000)
+    } else if (timeleft <= 0 && (val === "no" || val === undefined)) {
+        setTimeout((clearInterval(downloadTimer)), 4000);
+        clearInterval(downloadTimer);
+        setTimeout((location.assign('./login.html')), 4000)
     } else if (timeleft > 0 && timeleft != 1) {
         document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
     } else if (timeleft = 1) {
@@ -14,22 +27,23 @@ var downloadTimer = setInterval(function () {
 
     }
     timeleft -= 1;
+    console.log(val);
+    console.log(timeleft);
 
-    console.log(edit.value);
-    console.log(timeleft)
-    if ( timeleft === 0 && Number(edit.value) === 24796) {
+    if (timeleft === 0 && val === "yes") {
         instruction.style.color = 'blue';
-        instruction.innerHTML = 'Good!!'
-    } else if (timeleft === 0 && Number(edit.value) !== 24796) {
+        instruction.innerHTML = 'Nice!!'
+    } else if (timeleft === 0 && val === "no") {
         instruction.style.color = 'red';
         instruction.innerHTML = 'Game Over!!'
     }
-    else if (timeleft === 0 && edit.value === null) {
+    else if (timeleft === 0 && val === undefined) {
         instruction.style.color = 'red';
         instruction.innerHTML = 'Game Over!!'
     }
-    else if (timeleft === 0) {
+    if (timeleft === 0) {
         instruction.style.color = 'red';
         instruction.innerHTML = 'Game Over!!'
-    } 
+    }
 }, 1000);
+

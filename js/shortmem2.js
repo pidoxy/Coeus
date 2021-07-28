@@ -6,7 +6,7 @@ var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
         setTimeout((clearInterval(downloadTimer)), 4000);
         clearInterval(downloadTimer);
-        // setTimeout((location.assign('./shortterm_game5.html')), 4000)
+        setTimeout((location.assign('./shortterm_game3.html')), 4000)
     } else if (timeleft > 0 && timeleft != 1) {
         document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
     } else if (timeleft = 1) {
@@ -17,7 +17,7 @@ var downloadTimer = setInterval(function () {
 
     console.log(edit.value);
     console.log(timeleft)
-    if (edit.value.length === 6 && timeleft === 0 && Number(edit.value) === 905674) {
+    if (edit.value.length === 1 && timeleft === 0 && Number(edit.value) === 905674) {
         instruction.style.color = 'blue';
         instruction.innerHTML = 'Good!!'
     } else if (timeleft === 0 && Number(edit.value) !== 905674) {

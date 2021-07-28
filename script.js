@@ -17,5 +17,5 @@ const auth = firebase.auth();
 const database = firebase.database();
 
 const playGame = () => {
-    window.location.href = '/signup.html';
+    window.location.href = '/assessment.html';
 }
