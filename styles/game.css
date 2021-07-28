@@ -69,7 +69,87 @@ width:2%;
     color:#ffffff !important;
 }
 
+.btn-orange{
+    background-color:#FF8700 !important;
+    color:#ffffff !important;
+}
+
 .btn-font{
     font-size:2rem !important;
 }
 
+.logo > input {
+    font-size: 4rem !important;
+    letter-spacing: 1rem;
+    outline: 0;
+    border-width: 0 0 2px ;
+    border-style: dashed;
+    background-color: #00000000;
+    color:black;
+    width:60%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-font{
+    font-size:2rem !important;
+}
+
+.dash-icon{
+width:15%;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.logo > input: focus {
+    border-color: black;
+
+}
+
+[onclick] {
+    cursor: pointer;
+}
+
+a{
+    text-decoration:none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .logo-orange {
+    width: 4%;
+    }
+
+    .logo img {
+        width: 70% !important;
+    }
+
+    .logo p {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-orange {
+    width: 8%;
+    }
+
+    .row div{
+        min-height: 9.5rem;
+    }
+
+    .main-2{
+        background-color:#ABD8ED;
+        height: 45vh;
+    }
+
+    .logo p {
+        font-size: 1.5rem !important;
+    }
+}

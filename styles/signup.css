@@ -82,3 +82,15 @@ width:15%;
 .row div{
     min-height:6rem;
 }
+
+@media only screen and (max-width: 1200px) {
+    .logo-orange {
+    width: 4%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-orange {
+    width: 8%;
+    }
+}
