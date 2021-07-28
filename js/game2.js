@@ -6,7 +6,7 @@ var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
         setTimeout((clearInterval(downloadTimer)), 4000);
         clearInterval(downloadTimer);
-        setTimeout((location.assign('./game3.html')), 4000)
+        setTimeout((location.assign('./game5.html')), 4000)
     } else if (timeleft > 0 && timeleft != 1) {
         document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
     } else if (timeleft = 1) {
