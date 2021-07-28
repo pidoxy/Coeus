@@ -95,6 +95,14 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.btn-font{
+    font-size:2rem !important;
+}
+
+.dash-icon{
+width:15%;
+}
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -103,6 +111,14 @@ input[type=number] {
 .logo > input: focus {
     border-color: black;
 
+}
+
+[onclick] {
+    cursor: pointer;
+}
+
+a{
+    text-decoration:none !important;
 }
 
 @media only screen and (max-width: 1200px) {

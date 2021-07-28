@@ -42,10 +42,14 @@
         <div class="main-1 ">
             <div>
                 <div class="logo d-flex pt-5">
-                    <p style="color: #FF8700;" class="m-auto t-white text-center font-balsamiq">How many squares were red ? </p>
+                    <p style="color: #FF8700;" id="instruction" class="m-auto t-white text-center font-balsamiq">How
+                        many squares were red ? </p>
+                </div>
+                <div class="logo d-flex pt-1">
+                    <p class="m-auto d-block t-white text-center font-balsamiq"><span id="timer"></span></p>
                 </div>
                 <div class="logo d-flex pt-5">
-                    <p class="m-auto">____________________________________</p>
+                    <input id="editable" type="text" class="text-center m-auto font-balsamiq" />
                 </div>
             </div>
         </div>
@@ -53,9 +57,11 @@
             <div class="col-lg-6 col-md-8 mt-5 mx-auto dash-card">
                 <div class="p-3 px-4 rounded bg-light">
                     <h5>About this test </h5>
-                    <p>This test your short term memory. Short term memory is just how it sounds, it is kept in our brain for a short period of time but is not full encoded. For example short term memory can be used to recall a phone number that has just been recited to us.    
+                    <p>This test your short term memory. Short term memory is just how it sounds, it is kept in our
+                        brain for a short period of time but is not full encoded. For example short term memory can be
+                        used to recall a phone number that has just been recited to us.
 
-                        If you want to stay on top of your scores you can see the dashboard   </p>
+                        If you want to stay on top of your scores you can see the dashboard </p>
                 </div>
             </div>
     </main>
@@ -63,13 +69,12 @@
 
     </footer>
 
-
-    <script src="script.js"></script>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <script src="./js/game.js"></script>
+    <script src="./js/shortmem6.js"></script>
 </body>
 
 </html>
