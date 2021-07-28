@@ -17,5 +17,5 @@ const auth = firebase.auth();
 const database = firebase.database();
 
 const playGame = () => {
-    window.location.href = '/memoryTest.html';
+    window.location.href = '/assessment.html';
 }
