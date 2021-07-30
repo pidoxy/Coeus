@@ -30,3 +30,4 @@ const assess = () => {
     window.location.href = '/assessment_game.html';
 
 }
+

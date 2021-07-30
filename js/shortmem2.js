@@ -2,6 +2,10 @@
 var timeleft = 10;
 const edit = document.getElementById('editable');
 const instruction = document.getElementById('instruction');
+
+localStorage.setItem('score', 0);
+let score = parseInt(localStorage.getItem('score'));
+
 var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
         setTimeout((clearInterval(downloadTimer)), 4000);
@@ -16,20 +20,17 @@ var downloadTimer = setInterval(function () {
     timeleft -= 1;
 
     console.log(edit.value);
-    console.log(timeleft)
-    if (edit.value.length === 1 && timeleft === 0 && Number(edit.value) === 905674) {
-        instruction.style.color = 'blue';
-        instruction.innerHTML = 'Good!!'
+    console.log(timeleft);
+
+    if (timeleft === 0 && Number(edit.value) === 905674) {
+        localStorage.setItem('score', score + 500);
     } else if (timeleft === 0 && Number(edit.value) !== 905674) {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
+        localStorage.setItem('score', score + 0);
     }
     else if (timeleft === 0 && edit.value === null) {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
+        localStorage.setItem('score', score + 0);
     }
     else if (timeleft === 0) {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
-    } 
+        localStorage.setItem('score', score + 0);
+    }
 }, 1000);

@@ -14,7 +14,7 @@ const signInWithEmailFunction = () => {
     auth.signInWithEmailAndPassword(email, password)
         .then(() => {
             //Signed in successfully
-            window.location.assign('./dashboard.html')
+            window.location.href('./dashboard.html')
         })
         .catch(error => {
             //Something went wrong

@@ -1,6 +1,9 @@
 var timeleft = 15;
 const edit = document.getElementById('editable');
 const instruction = document.getElementById('instruction');
+
+let score = parseInt(localStorage.getItem('score'));
+
 var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
         setTimeout((clearInterval(downloadTimer)), 4000);
@@ -18,19 +21,15 @@ var downloadTimer = setInterval(function () {
     console.log(timeleft);
 
     if (timeleft === 0 && edit.value == "pie pizza peperoni pasta") {
-        instruction.style.color = 'blue';
-        instruction.innerHTML = 'Nice!!'
+        localStorage.setItem('score', score + 500);
     } else if (timeleft === 0 && edit.value !== "pie pizza peperoni pasta") {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
+        localStorage.setItem('score', score + 0);
     }
     else if (timeleft === 0 && edit.value === null) {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
+        localStorage.setItem('score', score + 0);
     }
     else if (timeleft === 0) {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
+        localStorage.setItem('score', score + 0);
     }
 }, 1000);
 

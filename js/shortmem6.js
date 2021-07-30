@@ -1,15 +1,14 @@
-
-
-
-
 var timeleft = 10;
 const edit = document.getElementById('editable');
 const instruction = document.getElementById('instruction');
+
+let score = parseInt(localStorage.getItem('score'));
+
 var downloadTimer = setInterval(function () {
     if (timeleft <= 0) {
         setTimeout((clearInterval(downloadTimer)), 4000);
         clearInterval(downloadTimer);
-        // setTimeout((location.assign('./shortterm_game5.html')), 4000)
+        setTimeout((location.assign('./congrats_login.html')), 4000)
     } else if (timeleft > 0 && timeleft != 1) {
         document.getElementById("timer").innerHTML = timeleft + " seconds remaining";
     } else if (timeleft = 1) {
@@ -20,20 +19,20 @@ var downloadTimer = setInterval(function () {
     console.log(edit.value);
     console.log(timeleft);
 
-    if (edit.value.length === 1 && timeleft === 0 && edit.value == 2) {
-        instruction.style.color = 'blue';
-        instruction.innerHTML = 'Amazing!!'
-    } else if (timeleft === 0 && edit.value !== 2) {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
+    if (timeleft === 0 && edit.value == 3) {
+        localStorage.setItem('score', score + 500);
+
+    } else if (timeleft === 0 && edit.value !== 3) {
+        localStorage.setItem('score', score + 0);
+
     }
     else if (timeleft === 0 && edit.value === null) {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
+        localStorage.setItem('score', score + 0);
+
     }
     else if (timeleft === 0) {
-        instruction.style.color = 'red';
-        instruction.innerHTML = 'Game Over!!'
+        localStorage.setItem('score', score + 0);
+
     }
 }, 1000);
 
