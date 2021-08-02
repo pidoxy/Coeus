@@ -14,11 +14,12 @@ When we were four members of a team, we decided to use HTML, CSS, and JavaScript
 
 ## What we learned
 
-## No matter what project we're working on, always keep setbacks in mind
-Be willing to learn new things.
-In terms of design 80% of the expectations were executed but there was some element of design that could've been communicated more effectively.
-Expect the unexpected
-What's next for Untitled
+* No matter what project we're working on, always keep setbacks in mind
+* Be willing to learn new things.
+* In terms of design 80% of the expectations were executed but there was some element of design that could've been communicated more effectively.
+* Expect the unexpected
+
+## What's next for Coeus
 What’s next?
 
 Coeus doesn’t store users data other than login credentials which means the application (memory game) has to be played from scratch each time a user logs in,
